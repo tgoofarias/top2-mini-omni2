@@ -164,6 +164,7 @@ def speaking(status, resp_text_holder=None, encoded_img=None):
                             audio_data = frame.split(b'\r\n\r\n', 1)[1]
                             # audio_data = base64.b64decode(audio_data)
                             output_audio_bytes += audio_data
+                            print(output_audio_bytes)
                             audio_array = np.frombuffer(audio_data, dtype=np.int8)
                             stream.write(audio_array)
                         elif b'Content-Type: text/plain' in frame:
