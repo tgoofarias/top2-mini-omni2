@@ -3,15 +3,8 @@ import sys
 import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.vad import get_speech_timestamps, collect_chunks, VadOptions
 
-import streamlit as st
-import wave
-
-import numpy as np
 import base64
-import io
-from typing import List
 import os
 import tempfile
 import librosa
@@ -19,20 +12,13 @@ from pydub import AudioSegment
 from PIL import Image
 from io import BytesIO
 import base64
-import requests
-import librosa
-import numpy as np
-import wave
-import os
 import tempfile
-from utils.vad import get_speech_timestamps, collect_chunks, VadOptions
 import soundfile as sf
 import cv2 
 from pydub import AudioSegment
 
 from inference_vision import OmniVisionInference
 from PIL import Image
-import io
 
 OUT_CHANNELS = 1
 OUT_RATE = 24000
