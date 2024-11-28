@@ -4,7 +4,6 @@
 checkpoint*/
 output/
 .DS_Store
-*.wav
 *.webp
 *.jpg
 
